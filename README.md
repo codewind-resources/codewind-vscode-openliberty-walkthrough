@@ -85,6 +85,17 @@ public class HelloResource {
 Opening the Application monitor allows you to monitor the activity and health of your application. This action is only available when the application is running or debugging.
 ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-metrics-dash.gif)
 
+You can use the metrics in this dashboard to help you determine if your application is performing as intended. For example, an application might look like it is functioning well, but these metrics can reveal if an application is working harder than it should be.
+
+- **CPU**: View this graph to see whether your computer is keeping up with the work you’re doing. If you have spare CPU cycles, your machine is likely keeping up with your throughput. If you don’t have spare CPU cycles, you might notice a degradation in performance.
+- **HTTP Incoming Requests**: View this graph to see the incoming requests that your microservice receives. You can track the incoming requests and their response times. The graph doesn’t show each request. Instead, it shows requests at specific points in time. Use this graph to see whether your application responds to the requests as quickly as intended or if a change created delays in response times.
+- **Memory**: Straight horizontal lines and lines that plateau indicates good memory. An ascending line indicates a memory leak and that the computer is running out of memory.
+- **HTTP Throughput**: This graph indicates how fast the application is processing the requests that are coming into it.
+- **Heap**: This graph is only available for Java and Node.js projects. It displays the heap size and the used heap on a timeline.
+- **HTTP Outbound Requests**: This graph is similar to the HTTP Incoming Requests graph and shows the number of outbound requests at specific points in time.
+- **Loop Times**: This graph indicates how fast a Node.js project is processing through an event loop.
+- **Other Requests**: This graph indicates the Socket.IO and other requests that the application processes.
+
 ## View Application Logs
 
 Viewing the logs of your application running in a docker container is easy from the IDE with Codewind. 
