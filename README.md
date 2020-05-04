@@ -80,21 +80,6 @@ public class HelloResource {
     ![append url to see your example work](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/append-url.gif)
 
 
-# View the Performance Dashboard
-
-You can run an application and use the performance dashboard data to determine whether the application is working harder than it should. By determining which applications are running harder than necessary, the performance dashboard can help you find slower applications and detect memory leaks.
-
-You'll notice that if you try to run a load test with the default project configuration, you will not get any results on the performance dashboard. This is because not all projects will have the required packages needed to provide monitoring, Spring Boot being one of these projects. However, we provide the ability to auto inject the required configuration at build time to include these packages. You will need to opt in for this to happen as it will modify the source code (but only in the build container).
-
-1. Navigate to the Project Overview page. You can do this either by right-clicking on the project in the Codewind explorer and selecting "Open Project Overview" or simply click the (i) information icon. 
-    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-proj-overview.png)
-2. Enable "Inject metrics." 
-    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/inject-metrics.gif) 
-Wait for the Application Status to go back to Running - it shouldn't take long.
-3. When the status reflects **[Running][Build Succeeded]** Navigate to the Performance Dashboard. ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-perf-dashboard.png)
-4. Now you can run a load test and monitor your application. 
-    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/perf-dash.gif)
-
 # Other Actions
 ## View the Application Monitor
 Opening the Application monitor allows you to monitor the activity and health of your application. This action is only available when the application is running or debugging.
@@ -119,3 +104,21 @@ The logs for the running application will be shown in the IDE console log window
 [//]: # https://labs.cognitiveclass.ai/tools/theiadocker/?md_instructions_url=https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/README.md
 ---!>
 # codewind-vscode-openliberty-walkthrough
+
+<!---
+# View the Performance Dashboard
+
+You can run an application and use the performance dashboard data to determine whether the application is working harder than it should. By determining which applications are running harder than necessary, the performance dashboard can help you find slower applications and detect memory leaks.
+
+You'll notice that if you try to run a load test with the default project configuration, you will not get any results on the performance dashboard. This is because not all projects will have the required packages needed to provide monitoring, Spring Boot being one of these projects. However, we provide the ability to auto inject the required configuration at build time to include these packages. You will need to opt in for this to happen as it will modify the source code (but only in the build container).
+
+1. Navigate to the Project Overview page. You can do this either by right-clicking on the project in the Codewind explorer and selecting "Open Project Overview" or simply click the (i) information icon. 
+    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-proj-overview.png)
+2. Enable "Inject metrics." 
+    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/inject-metrics.gif) 
+Wait for the Application Status to go back to Running - it shouldn't take long.
+3. When the status reflects **[Running][Build Succeeded]** Navigate to the Performance Dashboard. ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-perf-dashboard.png)
+4. Now you can run a load test and monitor your application. 
+    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/perf-dash.gif)
+    
+---!>
