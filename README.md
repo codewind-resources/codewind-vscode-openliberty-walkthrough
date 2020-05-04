@@ -29,13 +29,13 @@ We recommend working with the latest available version of each.
 
 1. Open VS Code (on the Mac, press **command** + **space bar** and type "code" into the dialog box)
 2. In the explorer window under **CODEWIND** click on the "**+**" to create a new project
-![Show user how to create a new project](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/codewind-explorer.png)
+![Show user how to create a new project](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/codewind-explorer.png)
 
 3. In the dialog pop-up search for "Open Liberty" and select the "Open Liberty (Default templates)" option
-![Show user how to find and select an Open Liberty template](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/search-project-type.png)
+![Show user how to find and select an Open Liberty template](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/search-project-type.png)
 
 4. Enter **cloud-native-microprofile** as the project name and hit enter. You will see a dialogue asking what parent directory you want for your projects. For the purposes of this lab, create a "codewind-workspace" directory during this step (if it does not already exist). In reality, you can choose to place the projects wherever it makes sense for you.
-	![name your project](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/create-project.png)
+	![name your project](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/create-project.png)
   
 # Automated Code Reload
 
@@ -44,7 +44,7 @@ A key to increasing developer productivity is shortening and reducing the fricti
 Let's look at this feature in action.
 
 1. 	In the project workspace under **src/main/java/io/openliberty/sample** create a new file **HelloResource.java**
-![Create a file called HelloResource.java](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/create-hello-dot-java.gif)
+![Create a file called HelloResource.java](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/create-hello-dot-java.gif)
 2. Edit **HelloResource.java** to look like below:
 	
 ```
@@ -74,10 +74,10 @@ public class HelloResource {
 ```
 
 3. You can view the status of the re-build and re-deploy by looking at the status indicator next to the project under the Codewind context. Once status returns to [Running][Build Suceeded] you can refresh your browser window to view the change we made. Please be aware that it can take a few seconds until something happens. 
-	![See app status](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/app-status.png)	
+	![See app status](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/app-status.png)	
 4. In VS Code click the "Open Application" icon.	
 5. Append `/system/hello?name=Cloud Native Microprofile` to the end of the url. You can try adding your own name next time.
-    ![append url to see your example work](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/append-url.gif)
+    ![append url to see your example work](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/append-url.gif)
 
 
 # View the Performance Dashboard
@@ -87,18 +87,18 @@ You can run an application and use the performance dashboard data to determine w
 You'll notice that if you try to run a load test with the default project configuration, you will not get any results on the performance dashboard. This is because not all projects will have the required packages needed to provide monitoring, Spring Boot being one of these projects. However, we provide the ability to auto inject the required configuration at build time to include these packages. You will need to opt in for this to happen as it will modify the source code (but only in the build container).
 
 1. Navigate to the Project Overview page. You can do this either by right-clicking on the project in the Codewind explorer and selecting "Open Project Overview" or simply click the (i) information icon. 
-    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/open-proj-overview.png)
+    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-proj-overview.png)
 2. Enable "Inject metrics." 
-    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/inject-metrics.gif) 
+    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/inject-metrics.gif) 
 Wait for the Application Status to go back to Running - it shouldn't take long.
-3. When the status reflects **[Running][Build Succeeded]** Navigate to the Performance Dashboard. ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/open-perf-dashboard.png)
+3. When the status reflects **[Running][Build Succeeded]** Navigate to the Performance Dashboard. ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-perf-dashboard.png)
 4. Now you can run a load test and monitor your application. 
-    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/perf-dash.gif)
+    ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/perf-dash.gif)
 
 # Other Actions
 ## View the Application Monitor
 Opening the Application monitor allows you to monitor the activity and health of your application. This action is only available when the application is running or debugging.
-![](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/open-metrics-dash.gif)
+![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-metrics-dash.gif)
 
 ## View Application Logs
 
@@ -106,7 +106,7 @@ Viewing the logs of your application running in a docker container is easy from 
 
 To view the logs for an application, right click on it and select "Show All Logs" 
 
-![](https://raw.githubusercontent.com/beccabau/codewind-vscode-ol-microprofile-quicklab/master/images/show-logs-new.png)
+![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/show-logs-new.png)
 
 The logs for the running application will be shown in the IDE console log window on the bottom right of the page. 
 
