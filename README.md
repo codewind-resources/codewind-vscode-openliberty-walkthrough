@@ -81,11 +81,19 @@ public class HelloResource {
 
 
 # Other Actions
-## View the Application Monitor
-Opening the Application monitor allows you to monitor the activity and health of your application. This action is only available when the application is running or debugging.
+## View the Metrics Dashboard
+
+You can use the Metrics Dashboard to help you determine if your application is performing as intended. For example, an application might look like it is functioning well, but these metrics can reveal if an application is working harder than it should be. This action is only available when the application is running or debugging.
+
+1. Navigate to the Project Overview page. You can do this either by right-clicking on the project in the Codewind explorer and selecting "Open Project Overview" or simply click the (i) information icon. 
+    ![Open project overview](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-proj-overview.png)
+2. Enable "Inject Appmetrics." 
+    ![Inject Appmetrics](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/inject-metrics.gif) 
+Wait for the Application Status to go back to Running - it shouldn't take long.
+3. When the status reflects **[Running][Build Succeeded]**, navigate to the Metrics Dashboard.
+
 ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-metrics-dash.gif)
 
-You can use the metrics in this dashboard to help you determine if your application is performing as intended. For example, an application might look like it is functioning well, but these metrics can reveal if an application is working harder than it should be.
 
 - **CPU**: View this graph to see whether your computer is keeping up with the work you’re doing. If you have spare CPU cycles, your machine is likely keeping up with your throughput. If you don’t have spare CPU cycles, you might notice a degradation in performance.
 - **HTTP Incoming Requests**: View this graph to see the incoming requests that your microservice receives. You can track the incoming requests and their response times. The graph doesn’t show each request. Instead, it shows requests at specific points in time. Use this graph to see whether your application responds to the requests as quickly as intended or if a change created delays in response times.
@@ -95,6 +103,7 @@ You can use the metrics in this dashboard to help you determine if your applicat
 - **HTTP Outbound Requests**: This graph is similar to the HTTP Incoming Requests graph and shows the number of outbound requests at specific points in time.
 - **Loop Times**: This graph indicates how fast a Node.js project is processing through an event loop.
 - **Other Requests**: This graph indicates the Socket.IO and other requests that the application processes.
+
 
 ## View Application Logs
 
@@ -128,7 +137,7 @@ You'll notice that if you try to run a load test with the default project config
 2. Enable "Inject metrics." 
     ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/inject-metrics.gif) 
 Wait for the Application Status to go back to Running - it shouldn't take long.
-3. When the status reflects **[Running][Build Succeeded]** Navigate to the Performance Dashboard. ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-perf-dashboard.png)
+3. When the status reflects **[Running][Build Succeeded]**, navigate to the Performance Dashboard. ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/open-perf-dashboard.png)
 4. Now you can run a load test and monitor your application. 
     ![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/perf-dash.gif)
     
