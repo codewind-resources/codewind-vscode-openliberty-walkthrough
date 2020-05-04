@@ -106,7 +106,7 @@ Viewing the logs of your application running in a docker container is easy from 
 
 To view the logs for an application, right click on it and select "Show All Logs" 
 
-![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/show-logs-new.png)
+![](https://raw.githubusercontent.com/beccabau/codewind-vscode-openliberty-walkthrough/master/images/show-logs.gif)
 
 The logs for the running application will be shown in the IDE console log window on the bottom right of the page. 
 
