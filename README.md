@@ -1,6 +1,6 @@
 # Codewind Quicklab
 
-Moving workloads to the cloud introduces a steep learning curve for developers accustomed to traditional web application development. Cloud-native applications are usually containerized (either Docker or OCI containers) and are run on orchestrated platforms like Kubernetes. These are complex technologies that bring big changes to the development workflow. Can this be simplified? Can developers create cloud-native applicatioons and deploy them to Kubernetes without climbing the mountainous learning curve? 
+Moving workloads to the cloud introduces a steep learning curve for developers accustomed to traditional web application development. Cloud-native applications are usually containerized (either Docker or OCI containers) and are run on orchestrated platforms like Kubernetes. These are complex technologies that bring big changes to the development workflow. Can this be simplified? Can developers create cloud-native applications and deploy them to Kubernetes without climbing the mountainous learning curve? 
 
 In this quicklab we will take a look at a use case involving Eclipse Codewind, a technology that simplify development of containerized cloud-native applications. Codewind is an IDE plugin that allows you to work with containerized applications in a familiar way. With Codewind, developers can start building cloud-native applications like experts without having to be an expert in all the cloud-native technologies. 
 
